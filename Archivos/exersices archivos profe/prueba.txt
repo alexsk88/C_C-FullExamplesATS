@@ -1,0 +1,1 @@
+Esta funcion lee un caracter a la vez del archivo que esta siendo señalado con el puntero *archivo
