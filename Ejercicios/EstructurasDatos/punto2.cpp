@@ -19,12 +19,13 @@ int main(void)
 	char frase [80];
 
 	printf("Introducir una frase \n  ");
-	scanf("%[^\n]", frase);
+	gets(frase);
+	//scanf("%[^\n]", frase);
 	scan_frase(frase, &Vo);
  	printf("\n Numero de Vocales = %d", Vo);
  	printf("\n Numero de Consonantes = %d", Co);
  	printf("\n Numero de Espacios = %d", Es);
- 	printf("\n Numero de digitos = %d", No);
+ 	printf("\n Numero de digitos = %d -------- %c", No, 165);
 }
 
 void scan_frase(char frase[], int *pVo)
@@ -46,7 +47,7 @@ void scan_frase(char frase[], int *pVo)
         }
         if (c=='B'||c=='C'||c=='D'||c=='F'||c=='G'
 		||c=='H'||c=='J'||c=='K'||c=='L'||c=='M'
-		||c=='N'||c=='Ñ'||c=='P'||c=='Q'||c=='R'||c=='S'
+		||c=='N'||c==165 ||c=='P'||c=='Q'||c=='R'||c=='S'
 		||c=='T'||c=='V'||c=='W'||c=='X'||c=='Y'||c=='Z' ) 
 		{	
 			Co++;

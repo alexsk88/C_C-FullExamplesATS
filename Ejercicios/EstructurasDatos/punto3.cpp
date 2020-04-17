@@ -3,6 +3,9 @@
 #include<iostream>
 #include<conio.h>
 #include<string.h>
+
+#include <clocale>
+
 using namespace std;
 
 void pedirDatos();
@@ -11,6 +14,7 @@ void contarVocales(char *);
 char palabraUsuario[30];
 
 int main(){
+	setlocale(LC_CTYPE,"Spanish");
 	pedirDatos();
 	contarVocales(palabraUsuario);//Llamada a la funcion para contar vocales del nombre
 	
@@ -21,12 +25,13 @@ int main(){
 void pedirDatos(){
 	cout<<"Digite una palabra: ";
 	cin.getline(palabraUsuario,30,'\n');
+	 _flushall();
 	
 	strupr(palabraUsuario); //pasar el nombre a mayuscula
 }
 
 void contarVocales(char *palabra){
-	int contA=0,contE=0,contI=0,contO=0,contU=0;
+	int contA=0,contE=0,contI=0,contO=0,contU=0 ,eje=0;
 	
 	while(*palabra){ //mientras nombre sea diferente de nulo '\0'
 		switch(*palabra){
@@ -35,6 +40,8 @@ void contarVocales(char *palabra){
 			case 'I': contI++;break;
 			case 'O': contO++;break;
 			case 'U': contU++;break;
+			case  165: eje++;break;
+			case  164: eje++;break;
 		}
 		palabra++;
 	}
@@ -45,4 +52,5 @@ void contarVocales(char *palabra){
 	cout<<"Numero de vocales I: "<<contI<<endl;
 	cout<<"Numero de vocales O: "<<contO<<endl;
 	cout<<"Numero de vocales U: "<<contU<<endl;
+		cout<<"ñ: "<<eje<<endl;
 }
