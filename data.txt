@@ -1,0 +1,44 @@
+VALORES DE X 
+____________
+
+20
+20
+25
+36
+4
+8
+98
+69
+6
+6
+
+
+VALORES DE Y 
+______________
+
+5
+32
+2
+5
+6
+4
+4
+6
+69
+8
+
+
+Calculos 
+______________
+
+Sumatoria de X = 292
+Sumatoria de Y = 141
+Sumatoria de XY = 2294
+Sumatoria de X^2 = 17238
+Sumatoria de Y^2 = 6007
+Sumatoria de XY = 2294
+Promedio de Y = 14
+Valor de a = 25 
+Valor de b = -0 
+Ecuacion de la Regresion:  Y = 25 + -0x
+Regresion Lineal = 0.540746 
